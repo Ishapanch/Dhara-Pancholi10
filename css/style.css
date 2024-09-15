@@ -3208,12 +3208,14 @@ body.modal {
 	background: white;
 	border-radius: 0.5rem;
 	position: relative;
-	width: 45%;
+	width: 48%;
 	margin: 0;
 	transition: 250ms all ease-in-out;
 	cursor: pointer;
   }
-
+  .card:nth-child(2n){
+	margin-left: 20px;
+  }
   .blog-detail  .card {
 	width: 100%;
   }
