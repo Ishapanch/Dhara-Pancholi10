@@ -1684,17 +1684,20 @@ a {
 	float: left;
 	width: 33.3333%;
 	padding-left: 40px;
+	height: 300px;
 }
 
 .tokyo_tm_portfolio .portfolio_list li .inner {
 	width: 100%;
-	height: auto;
+	height: 100%;
 	clear: both;
 	float: left;
 	overflow: hidden;
 	position: relative;
 }
-
+.tokyo_tm_portfolio .portfolio_list li .inner .entry{
+	height: 100%;
+}
 .tokyo_tm_portfolio .portfolio_list li .inner img {
 	opacity: 0;
 	min-width: 100%;
@@ -1707,7 +1710,7 @@ a {
 	left: 0px;
 	right: 0px;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: left;
 	background-size: cover;
 
 	-webkit-transition: all .3s ease;
@@ -1802,7 +1805,9 @@ a {
 	background-position: center center;
 	background-repeat: no-repeat;
 }
-
+.tokyo_tm_modalbox.opened .popup_details .top_image .main {
+    background-size: contain;
+}
 .tokyo_tm_modalbox .portfolio_main_title {
 	width: 100%;
 	float: left;
@@ -1910,6 +1915,8 @@ a {
 .tokyo_tm_modalbox .additional_images ul {
 	margin: 0px 0px 0px -30px;
 	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .tokyo_tm_modalbox .additional_images ul li {
@@ -1917,6 +1924,7 @@ a {
 	float: left;
 	width: 50%;
 	padding-left: 30px;
+	flex-basis: 50%;
 }
 
 /* .tokyo_tm_modalbox .additional_images ul li:nth-child(3n-2) {
