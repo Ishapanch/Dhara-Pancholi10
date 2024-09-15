@@ -3212,6 +3212,7 @@ body.modal {
 	margin: 0;
 	transition: 250ms all ease-in-out;
 	cursor: pointer;
+	margin-bottom: 40px;
   }
   .card:nth-child(2n){
 	margin-left: 20px;
